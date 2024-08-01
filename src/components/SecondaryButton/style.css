@@ -1,0 +1,16 @@
+.btn-secondary {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-neutral-700);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-big);
+    text-decoration: underline;
+    transition: color 0.5s linear;
+}
+
+@media (any-hover: hover) {
+    .btn-secondary:hover {
+        color: var(--clr-neutral-900);
+        transition: color 0.1s linear;
+    }
+}

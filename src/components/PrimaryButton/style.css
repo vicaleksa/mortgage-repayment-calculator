@@ -1,0 +1,9 @@
+.btn-primary {
+    border: none;
+    background-color: var(--clr-accent-lime);
+    font-size: var(--fs-200);
+    line-height: var(--lh-small);
+    font-weight: var(--fw-bold);
+    padding: var(--spacing-200) var(--spacing-500);
+    align-self: flex-start;
+}
