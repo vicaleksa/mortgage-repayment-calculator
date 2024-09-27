@@ -6,27 +6,29 @@
     --clr-neutral-700: hsl(200, 24%, 40%);
     --clr-neutral-900: hsl(202, 55%, 16%);
 
-    --clr-accent-lime: hsl(61, 70%, 52%);
+    --clr-accent-lime: rgb(216, 219, 47);
+    --clr-accent-lime50: rgba(216, 219, 47, .5);
+    --clr-accent-lime15: rgba(216, 219, 47, .15);
     --clr-accent-red: hsl(4, 69%, 50%);
 
     --fw-regular: 500;
     --fw-bold: 700;
 
-    --fs-100: 14px;
-    --fs-150: 16px;
-    --fs-200: 18px;
-    --fs-250: 24px;
-    --fs-400: 56px;
+    --fs-14px: 0.875rem;
+    --fs-16px: 1rem;
+    --fs-18px: 1.125rem;
+    --fs-24px: 1.5rem;
+    --fs-56px: 3.5rem;
 
     --lh-small: 125%;
     --lh-big: 150%;
 
-    --spacing-100: 8px;
-    --spacing-150: 12px;
-    --spacing-200: 16px;
-    --spacing-300: 24px;
-    --spacing-400: 32px;
-    --spacing-500: 40px;
+    --spacing-100: 0.5rem;
+    --spacing-150: 0.75rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
 }
 
 *,
@@ -45,7 +47,7 @@ body {
     background-color: var(--clr-neutral-100);
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: var(--fw-regular);
-    font-size: var(--fs-150);
+    font-size: var(--fs-16px);
     color: var(--clr-neutral-900);
 }
 
@@ -74,4 +76,25 @@ input {
     color: currentColor;
     font-family: inherit;
     font-size: inherit;
+}
+
+/* Remove arrows from number input in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*  Remove arrows from number input in Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.visually-hidden {
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
 }

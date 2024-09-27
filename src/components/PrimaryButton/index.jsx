@@ -1,13 +1,13 @@
 import React from 'react';
-import './style.css';
+import styles from './style.module.css';
 import Calculator from '/src/svg/calculator.svg';
 
 
 function PrimaryButton() {
     return (
-        <button className='btn-primary'>
+        <button className={styles.btnPrimary}>
             <img src={Calculator} alt="" />
-            Calculate Repayments
+            <div className={styles.text}>Calculate Repayments</div>
         </button>
     )
 }

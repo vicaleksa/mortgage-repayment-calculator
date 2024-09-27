@@ -1,0 +1,33 @@
+.btnPrimary {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--clr-accent-lime);
+    font-size: var(--fs-18px);
+    line-height: var(--lh-small);
+    font-weight: var(--fw-bold);
+    padding: var(--spacing-200) var(--spacing-500);
+}
+
+.text {
+    text-align: start;
+}
+
+@media (max-width: 375px) {
+    .btnPrimary {
+        width: 100%;
+        padding: var(--spacing-200) 0;
+    }
+}
+
+@media (any-hover: hover) {
+    .btnPrimary:hover {
+        background-color: var(--clr-accent-lime50);
+        transition: background-color 0.1s linear;
+        cursor: pointer;
+    }
+}

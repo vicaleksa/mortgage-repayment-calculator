@@ -1,10 +1,10 @@
 import React from 'react';
-import './style.css';
+import styles from './style.module.css';
 import Form from '../Form';
 
 function App() {
     return (
-        <div className='app'>
+        <div className={styles.app}>
             <Form />
         </div>
     )

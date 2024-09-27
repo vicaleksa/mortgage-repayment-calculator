@@ -1,5 +1,6 @@
-.btn-secondary {
+.btnSecondary {
     background-color: transparent;
+    padding: 0;
     border: none;
     color: var(--clr-neutral-700);
     font-weight: var(--fw-regular);
@@ -9,8 +10,9 @@
 }
 
 @media (any-hover: hover) {
-    .btn-secondary:hover {
+    .btnSecondary:hover {
         color: var(--clr-neutral-900);
         transition: color 0.1s linear;
+        cursor: pointer;
     }
 }

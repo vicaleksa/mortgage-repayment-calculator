@@ -1,9 +1,9 @@
 import React from 'react';
-import './style.css';
+import styles from './style.module.css';
 
 function SecondaryButton() {
     return (
-        <button className='btn-secondary'>
+        <button className={styles.btnSecondary}>
             Clear All
         </button>
     )
