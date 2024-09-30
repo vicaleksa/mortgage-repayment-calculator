@@ -1,8 +1,7 @@
 .mortgageCalculator {
-    /* ширина - временно, пока не сделаю обертку для двух колонок */
-    width: 504px;
-    background-color: white;
     padding: var(--spacing-500);
+    flex-shrink: 0;
+    width: 50%;
 }
 
 .header {

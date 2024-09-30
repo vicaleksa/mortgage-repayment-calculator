@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.image {
+    margin-bottom: var(--spacing-200);
+}
+
+.title {
+    color: var(--clr-neutral-white);
+    margin-bottom: var(--spacing-200);
+}
+
+.description {
+    color: var(--clr-neutral-300);
+    text-align: center;
+    line-height: var(--lh-big);
+}
