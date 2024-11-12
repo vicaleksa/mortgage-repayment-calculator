@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.module.css';
 
-function CalculatedResults() {
+function CalculatedResults({result}) {
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>
@@ -15,14 +15,14 @@ function CalculatedResults() {
                     Your monthly repayments
                 </p>
                 <p className={styles.monthly}>
-                    £1,797.74
+                    £{result.monthly}
                 </p>
                 <div className={styles.divider}></div>
                 <p className={styles.description}>
                     Total you'll repay over the term
                 </p>
                 <p className={styles.total}>
-                    £539,322.94
+                    £{result.total}
                 </p>
             </div>
         </div>

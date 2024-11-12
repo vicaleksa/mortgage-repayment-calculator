@@ -5,11 +5,13 @@ import Results from '../Results';
 
 
 function App() {
-    const [result, setResult] = useState({monthly: 0, total: 0});
+    const [result, setResult] = useState(null);
+
+    const onSubmit = (result) => setResult(result);
 
     return (
         <div className={styles.app}>
-            <Form />
+            <Form onSubmit={onSubmit} />
             <Results result={result} />
         </div>
     )

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './style.module.css';
 
-function NumberField({ title, prefix, prefixPosition = 'left', name }) {
+function NumberField(
+    {
+        title,
+        prefix,
+        prefixPosition = 'left',
+        name,
+        value,
+        handleChange,
+        error
+    }
+) {
     let inputWrapperClassName = `${styles.inputWrapper}`;
-
     if (prefixPosition === 'right') {
         inputWrapperClassName += ` ${styles.prefixRightPosition}`;
     }
@@ -18,11 +27,12 @@ function NumberField({ title, prefix, prefixPosition = 'left', name }) {
                     id={name}
                     name={name}
                     min={0}
-                    required
                     className={styles.inputNumber}
+                    value={value}
+                    onChange={handleChange}
                 />
             </div>
-            <span className={styles.error}>Error text</span>
+            {error && <span className={styles.error}>{error}</span>}
         </div>
     )
 }

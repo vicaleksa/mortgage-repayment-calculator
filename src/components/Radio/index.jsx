@@ -1,14 +1,25 @@
 import React from "react";
 import styles from './style.module.css';
 
-function Radio({name, text}) {
+function Radio(
+    {
+        text,
+        name,
+        value,
+        checked,
+        handleChange
+    }
+) {
     return (
-        <label htmlFor={name} className={styles.radioLabel}>
-            <input type="radio"
+        <label htmlFor={value} className={styles.radioLabel}>
+            <input
+                type='radio'
                 className="visually-hidden"
-                id={name}
-                name="mortgage_type"
-                value={name}
+                id={value}
+                name={name}
+                value={value}
+                checked={checked}
+                onChange={handleChange}
             />
             <span className={styles.radio}></span>
             <span className={styles.radioTitle}>{text}</span>

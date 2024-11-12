@@ -55,7 +55,6 @@
 }
 
 .error {
-    display: none;
     color: var(--clr-accent-red);
     font-size: var(--fs-14px);
     line-height: var(--lh-big);

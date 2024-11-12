@@ -4,10 +4,10 @@ import ExpectedResults from '../ExpectedResults';
 import CalculatedResults from '../CalculatedResults';
 
 
-function Results() {
+function Results({result}) {
     return (
         <div className={styles.container}>
-            <CalculatedResults />
+            {result ? <CalculatedResults result={result} /> : <ExpectedResults />}
         </div>
     )
 }
